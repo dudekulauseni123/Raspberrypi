@@ -1,3 +1,5 @@
+
+''' Python only implementation '''
 import numpy
 data = numpy.loadtxt('input_samples_50k.txt')
 
@@ -7,7 +9,6 @@ start_time = time.time()
 # Delay (lag) range that we are interesting in
 lags = range(10)
 
-''' Python only implementation '''
 
 # Pre-allocate autocorrelation table
 acorr = len(lags) * [0]
